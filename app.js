@@ -95,3 +95,24 @@ new IntersectionObserver(entries => {
   if (entries.some(entry => entry.isIntersecting)) playProductVideo();
 }, {threshold: .1}).observe(productVideo);
 playProductVideo();
+
+// Start the first card once, only after it is visible. Never replay on carousel scroll.
+const pinDemo = document.querySelector('.pin-demo');
+function finishPinDemo() {
+  pinDemo.classList.add('is-complete');
+  pinDemo.classList.remove('is-playing');
+}
+const pinObserver = new IntersectionObserver(entries => {
+  if (!entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= .6)) return;
+  pinObserver.disconnect();
+  if (reduced.matches) {
+    finishPinDemo();
+    return;
+  }
+  pinDemo.classList.add('is-playing');
+  pinDemo.querySelector('.tg-chat-mayonez').addEventListener('animationend', finishPinDemo, {once: true});
+}, {threshold: .6});
+pinObserver.observe(pinDemo);
+reduced.addEventListener('change', () => {
+  if (reduced.matches && pinDemo.classList.contains('is-playing')) finishPinDemo();
+});

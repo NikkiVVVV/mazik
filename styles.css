@@ -65,3 +65,34 @@
   .hero-subtitle{font-size:18px;line-height:24px;margin-bottom:16px}
   .hero .cta{min-height:52px;padding-block:14px}
 }
+
+/* Rebuilt Telegram mockup: fictional chats, a single pinning demonstration. */
+.pin-demo{container-type:inline-size;background:#dedede}
+.pin-demo>.step-number{font-size:32px;line-height:32px;left:16px;top:16px}
+.tg-phone{position:absolute;left:15%;top:9%;width:82%;height:140%;padding:8px 6px;background:#080808;border:3px solid #565656;border-radius:32px;box-shadow:0 12px 24px #0002;color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;overflow:hidden}
+.tg-status{height:16px;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:10px;font-weight:700;position:relative}
+.tg-island{width:28%;height:12px;border-radius:8px;background:#000;position:absolute;left:36%;top:0}
+.tg-toolbar{display:flex;justify-content:space-between;align-items:center;height:28px;padding:0 6px;font-size:12px;background:#1d1d1f}
+.tg-toolbar strong{font-size:16px;font-weight:700}.tg-toolbar svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.5}
+.tg-search{height:24px;display:flex;align-items:center;justify-content:center;gap:4px;border-radius:16px;background:#303032;color:#929294;font-size:12px;margin:4px 2px}
+.tg-search svg{width:14px;height:14px;stroke:currentColor;stroke-width:1.5}
+.tg-folders{height:24px;display:flex;align-items:center;gap:12px;padding:0 4px;margin-bottom:4px;font-size:11px;background:#1d1d1f;border-radius:16px;white-space:nowrap}
+.tg-folders span:first-child{background:#3b3b3d;padding:4px 12px;border-radius:16px}
+.tg-chats{position:relative;--row-height:clamp(48px,17cqw,64px);height:calc(4 * var(--row-height));text-align:left}
+.tg-chat{position:absolute;inset:0 0 auto;height:var(--row-height);display:flex;align-items:center;gap:8px;padding:6px 4px;background:#080808;border-bottom:1px solid #242424}
+.tg-avatar{width:clamp(32px,12cqw,44px);height:clamp(32px,12cqw,44px);border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-size:18px;font-weight:500;color:#fff}
+.tg-avatar-blue{background:#3c8ca9}.tg-avatar-purple{background:#8272a9}.tg-avatar-peach{background:#b47e65}.tg-avatar-mayonez{background:#f1f1ed;overflow:hidden}.tg-avatar-mayonez img{width:110%;max-width:none;transform:rotate(-8deg)}
+.tg-message{min-width:0;display:grid;gap:4px;padding-right:20px;font-size:clamp(10px,3.6cqw,13px);line-height:1.2}.tg-message strong{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tg-message>span{color:#929294;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tg-time{position:absolute;right:4px;top:8px;color:#929294;font-size:8px;line-height:12px}
+.tg-chat-friends{transform:translateY(0)}.tg-chat-plans{transform:translateY(100%)}.tg-chat-mayonez{transform:translateY(200%);z-index:2}.tg-chat-home{transform:translateY(300%)}
+.tg-pin{position:absolute;right:6px;bottom:8px;width:12px;height:12px;color:#969699;opacity:0;transform:scale(.5)}
+.pin-demo.is-playing .tg-chat-mayonez{animation:pin-mayonez 3.6s cubic-bezier(.22,.68,.18,1) both}
+.pin-demo.is-playing .tg-chat-friends{animation:pin-friends 3.6s cubic-bezier(.22,.68,.18,1) both}
+.pin-demo.is-playing .tg-chat-plans{animation:pin-plans 3.6s cubic-bezier(.22,.68,.18,1) both}
+.pin-demo.is-playing .tg-pin{animation:pin-icon 3.6s ease both}
+@keyframes pin-mayonez{0%,25%{transform:translateY(200%);background:#080808;box-shadow:none}38%{transform:translateY(200%) scale(1.025);background:#29292c;box-shadow:0 8px 16px #0006}72%{transform:translateY(0) scale(1.025);background:#29292c;box-shadow:0 8px 16px #0006}85%,100%{transform:translateY(0);background:#202022;box-shadow:none}}
+@keyframes pin-friends{0%,38%{transform:translateY(0)}72%,100%{transform:translateY(100%)}}
+@keyframes pin-plans{0%,38%{transform:translateY(100%)}72%,100%{transform:translateY(200%)}}
+@keyframes pin-icon{0%,78%{opacity:0;transform:scale(.5)}88%{opacity:1;transform:scale(1.2)}100%{opacity:1;transform:scale(1)}}
+.pin-demo.is-complete .tg-chat-mayonez{transform:translateY(0);background:#202022}.pin-demo.is-complete .tg-chat-friends{transform:translateY(100%)}.pin-demo.is-complete .tg-chat-plans{transform:translateY(200%)}.pin-demo.is-complete .tg-pin{opacity:1;transform:scale(1)}
+@media(max-width:350px){.tg-phone{top:8%;padding-top:4px}.tg-status{height:12px;font-size:8px}.tg-island{height:8px}.tg-toolbar{height:24px}.tg-search{height:20px;margin:2px}.tg-folders{height:20px;gap:8px;margin-bottom:2px}.tg-chats{--row-height:40px}.tg-avatar{width:28px;height:28px;font-size:16px}.tg-message{gap:2px;font-size:10px}.tg-time{font-size:7px;top:4px}}
