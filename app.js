@@ -12,7 +12,28 @@ slider.addEventListener('keydown', event => {
 const pouch = document.querySelector('.pouch-button');
 const reaction = document.querySelector('.pouch-reaction');
 const hint = document.querySelector('.pouch-hint');
-const phrases = ['Вот и поговорили.', 'Есть контакт.', 'Питательный разговор.'];
+const phrases = [
+  'Селёдка с молоком',
+  'Тирамису с чесноком',
+  'Оливье с мармеладом',
+  'Пельмени в йогурте',
+  'Килька в карамели',
+  'Борщ с бананом',
+  'Пломбир с аджикой',
+  'Суши с холодцом',
+  'Шпроты с нутеллой',
+  'Гречка в сгущёнке',
+  'Чизкейк с горчицей',
+  'Эклер с тушёнкой',
+  'Арбуз под майонезом',
+  'Хинкали с зефиром',
+  'Капучино на рассоле',
+  'Сырники с килькой',
+  'Паштет с попкорном',
+  'Крабовый рафаэлло',
+  'Пицца с киселём',
+  'Холодец с изюмом',
+];
 let squeezes = 0;
 let squeezeTimer, reactionTimer, hintTimer;
 function dismissHint() {
