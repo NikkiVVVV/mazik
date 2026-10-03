@@ -13,7 +13,7 @@
 .hero-copy{position:relative;flex:0 0 auto;width:100%;padding:0 24px;text-align:center;max-width:var(--content);margin:0 auto}
 .hero h1{font-size:80px;font-weight:900;letter-spacing:-3px;line-height:68px;margin-bottom:12px}
 .hero-subtitle{font-size:21px;line-height:28px;letter-spacing:-.6px;margin-bottom:40px}
-.cta{display:flex;align-items:center;justify-content:center;text-align:center;min-height:68px;padding:20px 14px;border-radius:12px;font-size:17px;line-height:24px;font-weight:400;transition:transform .2s,background .2s}.cta:active{transform:scale(.98)}.cta-primary{background:var(--ink);color:#fff;box-shadow:none}.cta-primary:hover{background:#262626}.cta-secondary{border:0;color:var(--ink);margin-top:12px;min-height:56px;padding:16px;background:#fff}.cta-secondary:hover{background:var(--cream)}
+.cta{display:flex;align-items:center;justify-content:center;text-align:center;min-height:56px;padding:16px 14px;border-radius:12px;font-size:17px;line-height:24px;font-weight:400;transition:transform .2s,background .2s}.cta:active{transform:scale(.98)}.cta-primary{background:var(--ink);color:#fff;box-shadow:none}.cta-primary:hover{background:#262626}.cta-secondary{border:0;color:var(--ink);margin-top:12px;background:#fff}.cta-secondary:hover{background:var(--cream)}
 .how-section{background:var(--surface);padding:40px 0 0;scroll-margin-top:40px}
 .how-section h2{max-width:var(--content);margin:0 auto 40px;padding:0 16px;font-size:40px;line-height:40px;letter-spacing:-1.2px;font-weight:900}
 .product-slider{max-width:var(--content);position:relative;display:flex;align-items:flex-start;gap:40px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;margin:0 auto;padding:0 16px 4px;scroll-padding-inline:16px;touch-action:pan-x pan-y}
@@ -37,7 +37,7 @@
 @keyframes cloud-drift{0%{opacity:0;transform:translate(20px,16px) scale(.9);filter:blur(3px)}12%,76%{opacity:1;transform:translate(0,0) scale(1);filter:blur(0)}100%{opacity:0;transform:translate(-32px,-20px) scale(1.08);filter:blur(6px)}}
 @keyframes hint-appear{0%,100%{opacity:0}12%,78%{opacity:1}}
 @keyframes draw-arrow{to{stroke-dashoffset:0}}
-@media(max-width:350px){.hero-copy{padding-inline:16px}.hero h1{font-size:68px;line-height:58px}.brand-row{padding-inline:18px}.hero-subtitle{font-size:19px}.cta{font-size:15px;min-height:64px}.cta-secondary{min-height:50px}.finale>.cta{width:calc(100% - 36px)}}
+@media(max-width:350px){.hero-copy{padding-inline:16px}.hero h1{font-size:68px;line-height:58px}.brand-row{padding-inline:18px}.hero-subtitle{font-size:19px}.cta{font-size:15px}.finale>.cta{width:calc(100% - 36px)}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.pouch-reaction.is-visible,.pouch-hint.is-showing{opacity:1}.pouch-hint.is-showing path{stroke-dashoffset:0}}
 
 /* Fixed navigation appears after scrolling; it takes no space in the initial hero. */
@@ -56,8 +56,7 @@
 @media(max-height:700px){
   .hero h1{font-size:72px;line-height:60px;margin-bottom:8px}
   .hero-subtitle{font-size:19px;line-height:24px;margin-bottom:24px}
-  .hero .cta-primary{min-height:60px;padding-block:16px}
-  .hero .cta-secondary{min-height:52px;padding-block:14px}
+  .hero .cta{min-height:52px;padding-block:14px}
 }
 @media(max-height:700px) and (max-width:350px){.hero h1{font-size:64px;line-height:56px}}
 @media(max-height:560px){
