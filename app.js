@@ -58,3 +58,19 @@ function updateHeaderVisibility() {
 window.addEventListener('scroll', updateHeaderVisibility, {passive: true});
 window.addEventListener('pageshow', updateHeaderVisibility);
 updateHeaderVisibility();
+
+// Silent inline loop; retry when mobile browsers restore the visible page.
+const productVideo = document.querySelector('.video-poster');
+function playProductVideo() {
+  if (document.hidden || !productVideo.paused) return;
+  productVideo.muted = true;
+  productVideo.play().catch(() => {});
+}
+productVideo.addEventListener('canplay', playProductVideo, {once: true});
+window.addEventListener('pageshow', playProductVideo);
+document.addEventListener('visibilitychange', playProductVideo);
+document.addEventListener('pointerdown', playProductVideo, {once: true, passive: true});
+new IntersectionObserver(entries => {
+  if (entries.some(entry => entry.isIntersecting)) playProductVideo();
+}, {threshold: .1}).observe(productVideo);
+playProductVideo();

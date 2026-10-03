@@ -21,7 +21,7 @@
 .product-slide{flex:0 0 80%;min-width:0;margin:0;scroll-snap-align:start}
 .video-poster,.step-placeholder{width:100%;aspect-ratio:1;border-radius:12px;overflow:hidden}
 .video-section{background:var(--surface);padding:40px 16px;scroll-margin-top:64px}
-.video-poster{max-width:448px;margin:auto;height:auto;object-fit:cover;object-position:center;display:block;background:#111}
+.video-poster{max-width:448px;margin:auto;height:auto;object-fit:cover;object-position:center;display:block;background:#111;pointer-events:none;user-select:none}
 .step-placeholder{position:relative;background:#dedede}
 .step-number{position:absolute;top:16px;left:20px;font-size:48px;line-height:48px;letter-spacing:-2px;font-weight:900}
 .product-slide figcaption{margin-top:16px;padding-inline:2px;font-size:16px;line-height:24px;font-weight:400;letter-spacing:-.2px;color:var(--ink)}
