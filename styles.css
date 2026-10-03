@@ -23,7 +23,6 @@
 .video-section{background:var(--surface);padding:40px 16px;scroll-margin-top:64px}
 .video-poster{max-width:448px;margin:auto;height:auto;object-fit:cover;object-position:center;display:block;background:#111;pointer-events:none;user-select:none}
 .step-placeholder{position:relative;background:#dedede}
-.step-number{position:absolute;top:16px;left:20px;font-size:48px;line-height:48px;letter-spacing:-2px;font-weight:900}
 .product-slide figcaption{margin-top:16px;padding-inline:2px;font-size:16px;line-height:24px;font-weight:400;letter-spacing:-.2px;color:var(--ink)}
 .finale{padding:40px 0 0;background:var(--orange);color:var(--cream);text-align:center;overflow:hidden}.finale h2{max-width:var(--content);margin:auto;padding:0 20px;font-size:clamp(42px,12.5vw,60px);line-height:.94;letter-spacing:-.035em;font-weight:900}.finale>.cta{max-width:432px;width:calc(100% - 48px);margin:20px auto 0;position:relative;z-index:5}.pouch-scene{height:clamp(260px,76vw,365px);max-width:var(--content);position:relative;margin:40px auto 0;isolation:isolate;overflow:hidden}.pouch-button{position:absolute;border:none;background:none;padding:0;left:-8%;bottom:-55px;width:116%;cursor:pointer;transform:rotate(-7deg);transition:transform .25s;transform-origin:55% 65%;z-index:2;color:var(--ink)}.pouch-button img{width:100%;filter:drop-shadow(0 14px 13px #78230c30)}.pouch-button.is-squeezing{animation:squeeze .65s ease both}.pouch-hint{position:absolute;left:31%;top:35%;font-size:17px;font-weight:700;transform:rotate(-9deg);pointer-events:none;display:flex;align-items:center;gap:4px;opacity:0}
 .pouch-hint svg{overflow:visible;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
@@ -68,8 +67,7 @@
 
 /* Rebuilt Telegram mockup: fictional chats, a single pinning demonstration. */
 .pin-demo{container-type:inline-size;background:#dedede}
-.pin-demo>.step-number{font-size:32px;line-height:32px;left:16px;top:16px}
-.tg-phone{position:absolute;left:15%;top:5%;width:82%;aspect-ratio:393/852;padding:5px;border:1px solid #94969a;border-radius:36px;background:linear-gradient(115deg,#dddfe2 0%,#64666b 9%,#bfc1c4 17%,#44464a 38%,#a3a5a9 64%,#383a3f 86%,#b6b8bc 100%);box-shadow:0 0 0 1px #44464d,0 2px 2px #fff9 inset,0 12px 20px #0003,0 2px 4px #0005;color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif}
+.tg-phone{position:absolute;left:50%;top:5%;width:82%;transform:translateX(-50%);aspect-ratio:393/852;padding:5px;border:1px solid #94969a;border-radius:36px;background:linear-gradient(115deg,#dddfe2 0%,#64666b 9%,#bfc1c4 17%,#44464a 38%,#a3a5a9 64%,#383a3f 86%,#b6b8bc 100%);box-shadow:0 0 0 1px #44464d,0 2px 2px #fff9 inset,0 12px 20px #0003,0 2px 4px #0005;color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif}
 .tg-phone::after{content:'';position:absolute;inset:3px;border:1px solid #ffffff20;border-radius:32px;pointer-events:none;box-shadow:inset 1px 0 1px #fff4,inset -1px 0 1px #0008}
 .tg-screen{height:100%;border:3px solid #08090b;border-radius:30px;background:#1c1c1e;overflow:hidden;position:relative}
 .tg-side-key{position:absolute;width:3px;border-radius:2px;background:linear-gradient(90deg,#4c4e53,#a2a4a7,#4c4e53);box-shadow:0 0 0 1px #34353a}
