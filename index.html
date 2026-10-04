@@ -22,8 +22,8 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23d84e40'/%3E%3Cpath d='M7 14v4m6-9v14m6-17v20m6-12v4' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preload" href="assets/golos-black.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/iphone-hand-right-v2.webp" as="image">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261004-desktop-fade">
+  <script src="app.js?v=20261004-pouch-right" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mazik.mosolov.work/#website","name":"Майонез","url":"https://mazik.mosolov.work/","inLanguage":"ru"},{"@type":"SoftwareApplication","name":"Майонез","applicationCategory":"LifestyleApplication","operatingSystem":"Telegram","description":"Дневник питания в Telegram: запись еды фото, голосом и текстом, оценка калорий и БЖУ, контроль веса.","url":"https://mazik.mosolov.work/","installUrl":"https://t.me/mayonez12_bot"},{"@type":"VideoObject","name":"Как записать еду голосом в Майонезе","description":"Короткий показ записи еды голосовым сообщением и результата в дневнике питания Майонеза.","thumbnailUrl":["https://mazik.mosolov.work/assets/product-video-poster.jpg"],"uploadDate":"2026-10-03T00:00:00+03:00","duration":"PT11.7S","contentUrl":"https://mazik.mosolov.work/assets/product-video.mp4","inLanguage":"ru"}]}</script>
 </head>
 <body>
@@ -61,45 +61,94 @@
 
     <section class="how-section" id="how" aria-labelledby="how-title">
       <h2 id="how-title">Как это работает?</h2>
-      <div id="purpose" class="product-slider" role="region" aria-roledescription="карусель" aria-label="Шесть шагов в Майонезе" tabindex="0">
+      <div id="purpose" class="product-slider" role="region" aria-roledescription="карусель" aria-label="Семь шагов в Майонезе" tabindex="0">
         <figure class="product-slide" role="group" aria-label="Шаг 0: Закрепи бота">
-          <div class="step-placeholder pin-demo" role="img" aria-label="Майонез поднимается на первое место в списке чатов Telegram и закрепляется">
-            <div class="tg-phone" aria-hidden="true">
-              <span class="tg-side-key tg-side-key-volume"></span><span class="tg-side-key tg-side-key-power"></span>
-              <div class="tg-screen">
-              <div class="tg-status"><span>9:41</span><span class="tg-island"><i></i></span><svg class="tg-status-icons" viewBox="0 0 60 16" fill="none"><g fill="currentColor"><rect x="0" y="10" width="3" height="5" rx="1"/><rect x="5" y="7" width="3" height="8" rx="1"/><rect x="10" y="4" width="3" height="11" rx="1"/><rect x="15" y="1" width="3" height="14" rx="1"/></g><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M23 5q7-7 14 0M26 8q4-4 8 0M29 11q1-1 2 0"/></g><rect x="41" y="3" width="16" height="10" rx="3" stroke="currentColor" opacity=".6"/><rect x="43" y="5" width="12" height="6" rx="1" fill="currentColor"/><path d="M59 6v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-              <div class="tg-toolbar"><span>Изм.</span><strong>Чаты</strong><svg viewBox="0 0 24 24" fill="none"><path d="M14 5H5v15h15v-9M10 14l1-4L20 1l3 3-9 9-4 1Z"/></svg></div>
-              <div class="tg-search"><svg viewBox="0 0 20 20" fill="none"><circle cx="8" cy="8" r="5.5"/><path d="m12 12 5 5"/></svg>Поиск</div>
-              <div class="tg-folders"><span>Все</span><span>Личное</span><span>Работа</span></div>
-              <div class="tg-chats">
-                <div class="tg-chat tg-chat-friends"><span class="tg-avatar"><img src="assets/chat-avatar-cat.webp" width="160" height="160" alt="" loading="lazy"></span><div class="tg-message"><strong>Друзья</strong><span>Кто идёт гулять?</span></div><span class="tg-time">12:42</span></div>
-                <div class="tg-chat tg-chat-plans"><span class="tg-avatar"><img src="assets/chat-avatar-disco.webp" width="160" height="160" alt="" loading="lazy"></span><div class="tg-message"><strong>Планы на вечер</strong><span>Встречаемся в семь</span></div><span class="tg-time">12:30</span></div>
-                <div class="tg-chat tg-chat-mayonez"><span class="tg-avatar tg-avatar-mayonez"><img src="assets/mayonez-pouch.webp" width="800" height="543" alt="" loading="lazy"></span><div class="tg-message"><strong>Майонез</strong><span>Обед записан ✓</span></div><span class="tg-time">12:24</span><svg class="tg-pin" viewBox="0 0 24 24" fill="currentColor"><path d="m15 2 7 7-2 2-2-1-5 5v4l-2 2-3-5-6 6-1-1 6-6-5-3 2-2h4l5-5-1-2 3-1Z"/></svg></div>
-                <div class="tg-chat tg-chat-home"><span class="tg-avatar"><img src="assets/chat-avatar-plant.webp" width="160" height="160" alt="" loading="lazy"></span><div class="tg-message"><strong>Дом</strong><span>Купи хлеб, пожалуйста</span></div><span class="tg-time">11:56</span></div>
-              </div>
+          <div class="step-placeholder phone-demo pin-demo">
+            <div class="device-mockup">
+              <span class="device-key device-key-volume" aria-hidden="true"></span>
+              <span class="device-key device-key-power" aria-hidden="true"></span>
+              <div class="device-screen">
+                <video class="pin-video device-media" width="600" height="1300" muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback tabindex="-1" poster="assets/pin-bot-poster.jpg" aria-label="Как закрепить Майонез в списке чатов Telegram">
+                  <source src="assets/pin-bot-demo.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
           <figcaption>Закрепи бота в списке чатов — так не забудешь записать приём пищи.</figcaption>
         </figure>
         <figure class="product-slide" role="group" aria-label="Шаг 1: Короткий тест">
-          <div class="step-placeholder" role="img" aria-label="Место для будущего скриншота: короткий тест"></div>
+          <div class="step-placeholder phone-demo">
+            <div class="device-mockup">
+              <span class="device-key device-key-volume" aria-hidden="true"></span>
+              <span class="device-key device-key-power" aria-hidden="true"></span>
+              <div class="device-screen">
+                <img class="device-media" src="assets/onboarding-goal.webp" width="600" height="1300" loading="lazy" alt="Майонез спрашивает о цели: снизить вес, поддерживать вес, набрать мышечную массу или следить за питанием.">
+              </div>
+            </div>
+          </div>
           <figcaption>Пройди короткий тест на норму КБЖУ или установи её вручную.</figcaption>
         </figure>
         <figure class="product-slide" role="group" aria-label="Шаг 2: Запись еды">
-          <div class="step-placeholder" role="img" aria-label="Место для будущего скриншота: запись еды"></div>
+          <div class="step-placeholder entry-demo" role="img" aria-label="Еду можно записать голосовым сообщением, фотографией или обычным текстом">
+            <div class="entry-voice telegram-bubble" aria-hidden="true">
+              <span class="voice-play"><svg viewBox="0 0 24 24"><path d="M7 3 22 12 7 21Z"/></svg></span>
+              <div class="voice-body"><div class="voice-wave"><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:8%"></i><i style="--bar:65%"></i><i style="--bar:65%"></i><i style="--bar:65%"></i><i style="--bar:65%"></i><i style="--bar:65%"></i><i style="--bar:65%"></i><i style="--bar:65%"></i><i style="--bar:8%"></i></div><span class="voice-duration">0:03 <i></i></span></div>
+              <span class="voice-transcript">→A</span>
+              <span class="message-meta">12:56 <svg viewBox="0 0 28 18"><path d="m1 10 5 5L20 1M11 13l2 2L27 1"/></svg></span>
+            </div>
+            <div class="entry-photos" aria-hidden="true">
+              <div class="food-card food-card-one"><img src="assets/entry-breakfast.webp" width="480" height="480" loading="lazy" alt=""></div>
+              <div class="food-card food-card-two"><img src="assets/entry-lunch.webp" width="480" height="480" loading="lazy" alt=""></div>
+              <div class="food-card food-card-three"><img src="assets/entry-snack.webp" width="480" height="480" loading="lazy" alt=""></div>
+            </div>
+            <div class="entry-text telegram-bubble" aria-hidden="true"><span>Яблоко и кофе</span><span class="message-meta">12:57 <svg viewBox="0 0 28 18"><path d="m1 10 5 5L20 1M11 13l2 2L27 1"/></svg></span></div>
+          </div>
           <figcaption>Фиксируй еду как удобнее: голосом, фото или текстом в свободной форме.</figcaption>
         </figure>
         <figure class="product-slide" role="group" aria-label="Шаг 3: Калории и дневной лимит">
-          <div class="step-placeholder" role="img" aria-label="Место для будущего скриншота: калории и дневной лимит"></div>
+          <div class="step-placeholder phone-demo phone-demo--focus">
+            <div class="device-mockup">
+              <span class="device-key device-key-volume" aria-hidden="true"></span><span class="device-key device-key-power" aria-hidden="true"></span>
+              <div class="device-screen "><img class="device-media" src="assets/calories-real.webp" width="600" height="1300" loading="lazy" alt="Дневник Майонеза: 697 ккал за день, остаток калорий и БЖУ."></div>
+            </div>
+          </div>
           <figcaption>Смотри калории и остаток на день.</figcaption>
         </figure>
-        <figure class="product-slide" role="group" aria-label="Шаг 4: Вес и читмилы">
-          <div class="step-placeholder" role="img" aria-label="Место для будущего скриншота: динамика веса и читмилы"></div>
-          <figcaption>Следи за динамикой веса и количеством читмилов за месяц.</figcaption>
+        <figure class="product-slide" role="group" aria-label="Шаг 4: Динамика веса">
+          <div class="step-placeholder phone-demo phone-demo--focus">
+            <div class="device-mockup">
+              <span class="device-key device-key-volume" aria-hidden="true"></span><span class="device-key device-key-power" aria-hidden="true"></span>
+              <div class="device-screen "><img class="device-media" src="assets/weight-cheat-real.webp" width="600" height="1300" loading="lazy" alt="График веса и кнопка Записать вес."></div>
+            </div>
+          </div>
+          <figcaption>Следи за динамикой веса.</figcaption>
         </figure>
-        <figure class="product-slide" role="group" aria-label="Шаг 5: Ачивки">
-          <div class="step-placeholder" role="img" aria-label="Место для будущего скриншота: ачивки"></div>
+        <figure class="product-slide" role="group" aria-label="Шаг 5: Читмилы за месяц">
+          <div class="step-placeholder phone-demo">
+            <div class="device-mockup">
+              <span class="device-key device-key-volume" aria-hidden="true"></span><span class="device-key device-key-power" aria-hidden="true"></span>
+              <div class="device-screen device-screen-cheat"><div class="cheat-header"><img src="assets/weight-cheat-real.webp" width="600" height="1300" alt="" loading="lazy"></div><div class="cheat-screenshot" role="img" aria-label="В этом месяце было 2 читмила. Календарь питания за неделю."><img src="assets/weight-cheat-real.webp" width="600" height="1300" alt="" loading="lazy"></div></div>
+            </div>
+          </div>
+          <figcaption>Смотри, сколько читмилов было в этом месяце.</figcaption>
+        </figure>
+        <figure class="product-slide" role="group" aria-label="Шаг 6: Ачивки">
+          <div class="step-placeholder awards-demo" role="img" aria-label="Коллекция из 14 ачивок Майонеза">
+            <div class="award-preview is-current" aria-hidden="true"><img src="assets/achievement-gallery/prosrochka.webp" width="256" height="256" loading="lazy" alt=""><span>С возвращением</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/overeater.webp" width="256" height="256" loading="lazy" alt=""><span>За отметкой</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/first_day.webp" width="256" height="256" loading="lazy" alt=""><span>Первая запись</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/weight_race.webp" width="256" height="256" loading="lazy" alt=""><span>Весогонка</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/seven_of_seven.webp" width="256" height="256" loading="lazy" alt=""><span>7 из 7</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/perfect_week.webp" width="256" height="256" loading="lazy" alt=""><span>Неделя по плану</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/bug_hunter.webp" width="256" height="256" loading="lazy" alt=""><span>Ловец багов</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/beer_master.webp" width="256" height="256" loading="lazy" alt=""><span>Пивной день</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/midnight_snack.webp" width="256" height="256" loading="lazy" alt=""><span>Ночной перекус</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/seven_days_no_food.webp" width="256" height="256" loading="lazy" alt=""><span>Снова в дневнике</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/fast_foodie.webp" width="256" height="256" loading="lazy" alt=""><span>Фастфудер</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/chips_day.webp" width="256" height="256" loading="lazy" alt=""><span>Чипсовый день</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/non_alcoholic_king.webp" width="256" height="256" loading="lazy" alt=""><span>Без градуса</span></div>
+            <div class="award-preview" aria-hidden="true"><img src="assets/achievement-gallery/carb_lover.webp" width="256" height="256" loading="lazy" alt=""><span>Углеводный день</span></div>
+          </div>
           <figcaption>Собери все ачивки.</figcaption>
         </figure>
       </div>
@@ -109,7 +158,7 @@
       <h2 id="final-title">Покушал?<br>Запиши.</h2>
       <a class="cta cta-primary" href="https://t.me/mayonez12_bot?start=landing">Записать</a>
       <div class="pouch-scene">
-        <button class="pouch-button" type="button" aria-label="Сжать пачку майонеза"><img src="assets/mayonez-pouch.webp" alt="Фирменная пачка Майонеза" width="800" height="543" loading="lazy"><span class="pouch-hint" aria-hidden="true">жмякни<svg viewBox="0 0 64 52" width="64" height="52" fill="none"><path class="hint-line" pathLength="1" d="M5 6C36 0 55 10 48 40"/><path class="hint-tip" pathLength="1" d="m37 31 11 11 11-12"/></svg></span></button>
+        <button class="pouch-button" type="button" aria-label="Сжать пачку майонеза"><img src="assets/mayonez-pouch.webp" alt="Фирменная пачка Майонеза" width="800" height="543" loading="lazy"></button>
         <p class="pouch-reaction" role="status" aria-live="polite"></p>
       </div>
     </section>
