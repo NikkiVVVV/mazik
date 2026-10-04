@@ -14,13 +14,13 @@
 .hero h1{font-size:80px;font-weight:900;letter-spacing:-3px;line-height:68px;margin-bottom:12px}
 .hero-subtitle{font-size:21px;line-height:28px;letter-spacing:-.6px;margin-bottom:40px}
 .cta{display:flex;align-items:center;justify-content:center;text-align:center;min-height:56px;padding:16px 14px;border-radius:12px;font-size:17px;line-height:24px;font-weight:400;transition:transform .2s,background .2s}.cta:active{transform:scale(.98)}.cta-primary{background:var(--ink);color:#fff;box-shadow:none}.cta-primary:hover{background:#262626}.cta-secondary{border:0;color:var(--ink);margin-top:12px;background:#fff}.cta-secondary:hover{background:var(--cream)}
-.how-section{background:var(--surface);padding:40px 0 0;scroll-margin-top:40px}
+.how-section{background:var(--surface);padding:40px 0;scroll-margin-top:40px}
 .how-section h2{max-width:var(--content);margin:0 auto 40px;padding:0 16px;font-size:40px;line-height:40px;letter-spacing:-1.2px;font-weight:900}
 .product-slider{max-width:var(--content);position:relative;display:flex;align-items:flex-start;gap:40px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;margin:0 auto;padding:0 16px 4px;scroll-padding-inline:16px;touch-action:pan-x pan-y}
 .product-slider::-webkit-scrollbar{display:none}
 .product-slide{flex:0 0 80%;min-width:0;margin:0;scroll-snap-align:start}
 .video-poster,.step-placeholder{width:100%;aspect-ratio:1;border-radius:12px;overflow:hidden}
-.video-section{background:var(--surface);padding:40px 16px;scroll-margin-top:64px}
+.video-section{background:var(--surface);padding:40px 16px 0;scroll-margin-top:64px}
 .video-poster{max-width:448px;margin:auto;height:auto;object-fit:cover;object-position:center;display:block;background:#111;pointer-events:none;user-select:none}
 .step-placeholder{position:relative;background:#dedede}
 .product-slide figcaption{margin-top:16px;padding-inline:2px;font-size:16px;line-height:24px;font-weight:400;letter-spacing:-.2px;color:var(--ink)}
